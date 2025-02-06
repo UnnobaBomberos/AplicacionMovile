@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos para acceder al almacenamiento -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+
+    <!-- Permisos para internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.AncapArgentina"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AncapArgentina">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Declara las actividades adicionales -->
+        <activity android:name=".AutoPdfActivity" android:exported="true" />
+        <activity android:name=".ModelListActivity" android:exported="true" />
+        <activity android:name=".ModeloDetailActivity" android:exported="true" />
+        <activity android:name=".LocalPdfActivity" android:exported="true" />
+
+    </application>
+
+</manifest>

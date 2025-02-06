@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorPrimaryDark">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:text="Bomberos voluntarios"/>
+    <ImageView
+        android:id="@+id/imageViewModelo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Imagen del Modelo" />
+
+    <!-- Nombre del modelo -->
+    <TextView
+        android:id="@+id/textViewNombreModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Nombre del Modelo"
+        android:paddingTop="16dp"
+        android:textColor="@color/white"/>
+
+    <!-- Año del modelo -->
+    <TextView
+        android:id="@+id/textViewAnoModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Año del Modelo"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/textViewTipoCombustible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Tipo de Combustible"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/textViewTipoVehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Tipo de vehiculo"
+        android:textColor="@color/white"/>
+
+    <!-- Botón para abrir PDF -->
+    <Button
+        android:id="@+id/buttonVerPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver PDF"
+        android:paddingTop="16dp" />
+    <Button
+        android:id="@+id/buttonDescargarPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descargar PDF"
+        android:paddingTop="16dp"
+        />
+
+</LinearLayout>
+

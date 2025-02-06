@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/rounded_card_background"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/modelImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="Imagen del modelo" />
+
+    <TextView
+        android:id="@+id/modelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Modelo"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:gravity="center" />
+</LinearLayout>
+

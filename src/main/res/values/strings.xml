@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Bomberos Voluntarios</string>
+    <string name="car_model_image" translatable="false">Car model image</string>
+</resources>
